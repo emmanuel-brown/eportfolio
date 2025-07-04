@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/Button";
 import { ArrowRight, Code, Palette, Zap } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -11,7 +10,7 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 mb-6 animate-fade-in">
-              Hello, I'm{" "}
+              Hello, I&apos;m{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
                 Emmanuel Brown
               </span>
@@ -85,7 +84,7 @@ export default function Home() {
             Ready to work together?
           </h2>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            I'm always interested in new opportunities and exciting projects. Let's create something amazing together!
+            I&apos;m always interested in new opportunities and exciting projects. Let&apos;s create something amazing together!
           </p>
           <Button asChild size="lg">
             <Link href="/contact">Start a Project</Link>

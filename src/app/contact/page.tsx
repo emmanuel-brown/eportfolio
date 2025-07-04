@@ -4,7 +4,6 @@ import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/Button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 
@@ -15,7 +14,6 @@ const Contact = () => {
         subject: "",
         message: ""
     });
-    const { toast } = useToast();
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
@@ -39,19 +37,9 @@ const Contact = () => {
 
 
         if (!res.ok) {
-            toast({
-                title: "Error",
-                description: "There was an error sending your message. Please try again later.",
-                variant: "destructive"
-            });
             alert("There was an error sending your message. Please try again later.");
             return;
         }
-
-        toast({
-            title: "Success",
-            description: "Your message has been sent successfully! I'll get back to you soon.",
-        });
         setFormData({ name: "", email: "", subject: "", message: "" });
         alert("Your message has been sent successfully! I'll get back to you soon.");
     };
@@ -66,7 +54,7 @@ const Contact = () => {
               Get In Touch
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              I'd love to hear from you! Whether you have a project in mind, want to collaborate, 
+              I&apos;d love to hear from you! Whether you have a project in mind, want to collaborate, 
               or just want to say hello, feel free to reach out.
             </p>
           </div>
@@ -186,7 +174,7 @@ const Contact = () => {
                         required
                         value={formData.subject}
                         onChange={handleInputChange}
-                        placeholder="What's this about?"
+                        placeholder="What&apos;s this about?"
                       />
                     </div>
 

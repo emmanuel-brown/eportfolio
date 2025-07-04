@@ -54,7 +54,7 @@ const Projects = () => {
             My Projects
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Here's a showcase of some of my recent work. Each project represents a unique challenge 
+            Here&apos;s a showcase of some of my recent work. Each project represents a unique challenge 
             and an opportunity to create something meaningful.
           </p>
         </div>
@@ -95,8 +95,8 @@ const Projects = () => {
             Interested in working together?
           </h2>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            I'm always open to discussing new projects and opportunities. 
-            Let's create something amazing together!
+            I&apos;m always open to discussing new projects and opportunities. 
+            Let&apos;s create something amazing together!
           </p>
           <Button size="lg" asChild>
             <a href="/contact">Get In Touch</a>
